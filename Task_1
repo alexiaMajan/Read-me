@@ -1,0 +1,35 @@
+
+package movie;
+import java.util.Scanner;
+
+
+
+public class MovieDriver {
+
+	private String title;
+	private String rating;
+	int soldTickets;
+	
+	public static void main(String[] args ) {
+		Scanner keyboard = new Scanner(System.in);
+		//Create a new movie object
+		Movie movie = new Movie();
+		
+		System.out.println("Enter the the title of the movie: ");
+		String title = keyboard.nextLine();
+		movie.settitle(title);
+		
+		System.out.print("Enter the movie rating: ");
+		String rating = keyboard.nextLine();
+		movie.setrating(rating);
+		
+		System.out.print("Enter the number of tickets solds: ");
+		int soldtickets = keyboard.nextInt();
+		movie.setsoldTickets(soldTickets);
+	
+		System.out.println(movie.toString());
+		// end code
+		System.out.print("goodbye");
+	}
+		
+}
